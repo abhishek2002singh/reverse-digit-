@@ -1,0 +1,49 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+   int n,count=0,s;
+   cout<<"enter a number";
+   cin>>n;
+   int z,q,l=0,rem,sum=0,m,g;
+  q=n;
+  z=q;
+  s=n%10;
+  if(n==0)
+  {
+    cout<<"0";
+
+  }
+  else if(s!=0)
+  {
+    while(n>0){
+      rem=n%10;
+      sum=sum*10+rem;
+      n/=10;
+  }
+  cout<<endl<<sum;
+  }
+  else{
+    m=q%10;
+  while(m==0)
+  {
+    m=q%10;
+    q/=10;
+    count++;
+  }
+  for(int i=count;i>1;i--)
+  {
+    cout<<"0";
+  }
+  while(z>0)
+  {
+    g=z%10;
+    l=l*10+g;
+    z/=10;
+  }
+  cout<<l;
+  }
+    return 0;
+}
